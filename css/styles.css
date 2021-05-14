@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+}
+
+/* Barra de navegacion superior sector superior*/
+.nav-container-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9B9C9C;
+    color: #F8F9FA;
+}
+
+/* Tendrán que realizar la declaración de una clase para colocar color a una etiqueta. */
+.nav-container-top__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.search-container__form{
+    display: flex;
+    width: 100%;
+}
+.search-container__search{
+    display: flex;
+    width: 100%;
+}
+
+.nav-container-top__sign ul{
+    display: flex;
+    padding: 0;
+}
+.nav-container-top__sign li{
+    list-style: none;
+    margin: 0 10px;
+}
+.nav-container-top__sign a{
+    text-decoration: none;
+    color: #F8F9FA;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-container-top__sign a:hover{
+    text-decoration: underline;
+}
+
+/* Barra de navegacion superior sector inferior*/
+.nav-container-down{
+    display: flex;
+    justify-content: center;
+    background-color: #212529;
+}
+.nav-container-down nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.nav-container-down li{
+    padding: 0 20px;
+}
+.nav-container-down a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #F8F9FA;
+    text-transform: uppercase;
+}
+.nav-container-down a:hover{
+    text-decoration: underline;
+}
+
+/* Deberán colorear el texto dentro de una lista sin utilizar una clase. */
+li{
+    color: coral;
+}
+
+/* Carrusel de imagenes */
+.hero-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Video */
+.container-video-promo{
+    display: flex;
+    justify-content: center;
+}
