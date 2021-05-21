@@ -92,7 +92,7 @@ body{
     font-size: xx-large;
 }
 
-/* Listas */
+/* -----Listas----- */
 .promo li{
     color: coral;
     line-height: 25px;
@@ -101,7 +101,7 @@ body{
     list-style: square inside;
 }
 
-/* Carrusel de imagenes */
+/* -----Carrusel de imagenes----- */
 .hero-container{
     display: flex;
     justify-content: space-around;
@@ -111,7 +111,7 @@ body{
     background-color: #9B9C9C;
 }
 
-/* Video */
+/* -----Video----- */
 .container-video-promo{
     display: flex;
     justify-content: center;
@@ -120,15 +120,40 @@ body{
     background-position: center;
 }
 
-/* Tablas */
+/* -----Tablas----- */
 .promo-title, thead{
     background-color: aqua;
     color: crimson;
 }
 
-/* Formulario de contacto */
+/* -----Formulario de contacto----- */
 form label,
 select{
     display: block;
     margin: 10px 0;
+}
+
+/* -----Footer----- */
+.footer-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-container-social ul{
+    display: flex;
+    list-style: none;
+}
+.footer-container-social a{
+    display: flex;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.footer-container-terms ul{
+    display: flex;
+    list-style: none;
+}
+.footer-container-terms a{
+    display: flex;
+    text-decoration: none;
+    padding: 0 15px;
 }
