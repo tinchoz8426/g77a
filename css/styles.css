@@ -1,8 +1,9 @@
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Barra de navegacion superior sector superior*/
+/* -----Barra de navegacion superior sector superior-----*/
 .nav-container-top {
     display: flex;
     justify-content: space-around;
@@ -10,8 +11,6 @@ body{
     background-color: #9B9C9C;
     color: #F8F9FA;
 }
-
-/* Tendrán que realizar la declaración de una clase para colocar color a una etiqueta. */
 .nav-container-top__logo {
     display: flex;
     align-items: center;
@@ -55,7 +54,7 @@ body{
     text-decoration: underline;
 }
 
-/* Barra de navegacion superior sector inferior*/
+/* -----Barra de navegacion superior sector inferior-----*/
 .nav-container-down{
     display: flex;
     justify-content: center;
@@ -79,9 +78,27 @@ body{
     text-decoration: underline;
 }
 
-/* Deberán colorear el texto dentro de una lista sin utilizar una clase. */
-li{
+/* -----Juegos destacados----- */
+.featured-games-container{
+    background-image: url("../assets/images/mario.jpg");
+    background-repeat: repeat-x;
+    padding-bottom: 20px;
+}
+.featured-games-container h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/* Listas */
+.promo li{
     color: coral;
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    list-style: square inside;
 }
 
 /* Carrusel de imagenes */
@@ -89,10 +106,29 @@ li{
     display: flex;
     justify-content: space-around;
     text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #212529;
+    background-color: #9B9C9C;
 }
 
 /* Video */
 .container-video-promo{
     display: flex;
     justify-content: center;
+    background-image: url("../assets/images/joysticks.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Tablas */
+.promo-title, thead{
+    background-color: aqua;
+    color: crimson;
+}
+
+/* Formulario de contacto */
+form label,
+select{
+    display: block;
+    margin: 10px 0;
 }

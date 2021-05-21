@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G77A - Juegos</title>
+    <!-- -----Fuentes Google Font----- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -----Hoja CSS----- -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
@@ -15,7 +22,12 @@
           <img src="../assets/images/logo.webp" alt="Logo G77A" />
           <h1>G77A</h1>
         </div>
-        <div><h2>Barra de busqueda</h2></div>
+        <div class="search-container">
+          <form class="search-container__form" action="#" method="GET">
+            <input type="search" class="search-container__search" />
+            <input type="submit" value="Buscar" />
+          </form>
+        </div>
         <div class="nav-container-top__sign">
           <ul>
             <li><a href="#">Carrito</a></li>
@@ -28,20 +40,20 @@
         <nav>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/games.html">Juegos</a></li>
-            <li><a href="../pages/cards.html">Tarjetas</a></li>
-            <li><a href="../pages/points.html">Puntos</a></li>
-            <li><a href="../pages/about-us.html">Nosotros</a></li>
-            <li><a href="../pages/contact.html">Contacto</a></li>
-            <li><a href="../pages/payment-methods.html">Formas de pago</a></li>
+            <li><a href="games.html">Juegos</a></li>
+            <li><a href="cards.html">Tarjetas</a></li>
+            <li><a href="points.html">Puntos</a></li>
+            <li><a href="about-us.html">Nosotros</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="payment-methods.html">Formas de pago</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Table -->
-    <table>
-      <caption>
+    <table class="promo">
+      <caption class="promo-title">
         ¡Promoción del día!
       </caption>
       <thead>
