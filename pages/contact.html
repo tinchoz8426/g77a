@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G77A - Contacto</title>
-    <!-- -----Fuentes Google Font----- -->
+    <!-- Fuentes Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- -----Hoja CSS----- -->
+    <!-- Hoja CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- FontAwesome para iconos -->
+    <script
+      src="https://kit.fontawesome.com/9514dd5057.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="nav-container-top">
         <div class="nav-container-top__logo">
-          <img src="../assets/images/logo.webp" alt="Logo G77A" />
-          <h1>G77A</h1>
+          <a href="../index.html"
+            ><img src="../assets/images/logo.png" alt="Logo G77A"
+          /></a>
         </div>
         <div class="search-container">
           <form class="search-container__form" action="#" method="GET">
@@ -30,7 +36,9 @@
         </div>
         <div class="nav-container-top__sign">
           <ul>
-            <li><a href="#">Carrito</a></li>
+            <li>
+              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            </li>
             <li><a href="#">Iniciar sesion</a></li>
             <li><a href="#">Registrarse</a></li>
           </ul>
@@ -42,51 +50,71 @@
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../pages/games.html">Juegos</a></li>
             <li><a href="../pages/cards.html">Tarjetas</a></li>
-            <li><a href="../pages/points.html">Puntos</a></li>
             <li><a href="../pages/about-us.html">Nosotros</a></li>
             <li><a href="../pages/contact.html">Contacto</a></li>
-            <li><a href="../pages/payment-methods.html">Formas de pago</a></li>
+            <li><a href="../pages/payment-methods.html">¿Como comprar?</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- Formulario -->
-    <form action="#" method="GET" enctype="text/plain">
-      <label for="name">Nombre:</label>
 
-      <input type="text" id="name" required />
+    <!-- Main -->
+    <main>
+      <div class="contact-container">
+        <!-- Seccion PROBLEMAS CON LA COMPRA -->
+        <section>
+          <div class="contact-pursache-problem">
+            <h1 class="contact-pursache-problem__title">¿Problemas con la compra?</h1>
+            <p class="contact-pursache-problem__text">
+              La mejor forma de resolverlo rapidamente es <a href="">crear un ticket</a>.
+            </p>
+            <a class="contact-pursache-problem__link" href="#">Crear ticket ahora</a>
+          </div>
+        </section>
+        <!-- Seccion FORMULARIO DE CONTACTO -->
+        <section>
+          <div>
+            <form action="#" method="GET" enctype="text/plain">
+              <h2>Formulario de contacto</h2>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" required />
+              <label for="surname">Apellido:</label>
+              <input type="text" id="surname" required />
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" required />
+              <select name="feedback">
+                <option value="recommendation">Recomendación</option>
+                <option value="enquiry">Consulta</option>
+                <option value="improvement">Mejora</option>
+                <option value="other">Otro</option>
+              </select>
+              <label for="comment">Dejanos tu comentario:</label>
+              <textarea id="comment" cols="30" rows="10" required></textarea>
+              <input type="reset" value="Limpiar" />
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
 
-      <label for="surname">Apellido:</label>
-
-      <input type="text" id="surname" required />
-
-      <label for="email">Correo electrónico:</label>
-
-      <input type="email" id="email" required />
-      <select name="feedback">
-        <option value="recommendation">Recomendación</option>
-        <option value="enquiry">Consulta</option>
-        <option value="improvement">Mejora</option>
-        <option value="other">Otro</option>
-      </select>
-      <label for="comment">Dejanos tu comentario:</label>
-
-      <textarea id="comment" cols="30" rows="10" required></textarea>
-      <label for="newsletter">¿Deseas recibir nuestro Newsletter?</label>
-      <input type="checkbox" id="newsletter" />
-
-      <input type="reset" value="Limpiar formulario" />
-      <input type="submit" value="Enviar formulario" />
-    </form>
     <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-container-social">
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Youtube</a></li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </li>
           </ul>
         </div>
         <div class="footer-container-terms">

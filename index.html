@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G77A - Tu tienda de videojuegos</title>
-    <!-- -----Fuentes Google Font----- -->
+    <!-- Fuentes Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- -----Hoja CSS----- -->
+    <!-- Hoja CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- FontAwesome para iconos -->
+    <script
+      src="https://kit.fontawesome.com/9514dd5057.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="nav-container-top">
         <div class="nav-container-top__logo">
-          <img src="assets/images/logo.webp" alt="Logo G77A" />
-          <h1>G77A</h1>
+          <a href="index.html"
+            ><img src="assets/images/logo.png" alt="Logo G77A"
+          /></a>
         </div>
         <div class="search-container">
           <form class="search-container__form" action="#" method="GET">
@@ -30,7 +36,9 @@
         </div>
         <div class="nav-container-top__sign">
           <ul>
-            <li><a href="#">Carrito</a></li>
+            <li>
+              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            </li>
             <li><a href="#">Iniciar sesion</a></li>
             <li><a href="#">Registrarse</a></li>
           </ul>
@@ -42,65 +50,202 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="pages/games.html">Juegos</a></li>
             <li><a href="pages/cards.html">Tarjetas</a></li>
-            <li><a href="pages/points.html">Puntos</a></li>
             <li><a href="pages/about-us.html">Nosotros</a></li>
             <li><a href="pages/contact.html">Contacto</a></li>
-            <li><a href="pages/payment-methods.html">Formas de pago</a></li>
+            <li><a href="pages/payment-methods.html">¿Como comprar?</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
     <!-- Main -->
     <main>
-      <div class="hero-container">
-        <div class="hero-container__best-seller">
-          <h3>Más vendidos</h3>
-          <div>
-            <img
-              src="assets/images/offer-and-seller.webp"
-              alt="Juego más vendido"
-            />
+      <!-- Seccion MAS VENDIDOS Y EN OFERTA -->
+      <section>
+        <div class="hero-container">
+          <div class="hero-container__best-seller">
+            <h3>Más vendidos</h3>
+            <div>
+              <img
+                src="assets/images/offer-and-seller.webp"
+                alt="Juego más vendido"
+              />
+            </div>
+          </div>
+          <div class="hero-container__offer">
+            <h3>En oferta</h3>
+            <div>
+              <img
+                src="assets/images/offer-and-seller.webp"
+                alt="Juego en oferta"
+              />
+            </div>
           </div>
         </div>
-        <div class="hero-container__offer">
-          <h3>En oferta</h3>
-          <div>
-            <img
-              src="assets/images/offer-and-seller.webp"
-              alt="Juego en oferta"
-            />
+      </section>
+      <!-- Seccion JUEGOS DESTACADOS -->
+      <section>
+        <div class="featured-games-container">
+          <div class="featured-games-containe__title">
+            <h2>Juegos destacados</h2>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img
+                src="assets/images/resident-evil-village.jpg"
+                alt="Resident Evil Village"
+              />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Resident Evil Village</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img src="assets/images/battlefield-1.jpg" alt="Battlefield 1" />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Battlefield 1</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img src="assets/images/dark-solus-tres.jpg" alt="Dark Souls 3" />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Dark Solus 3</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img
+                src="assets/images/dead-by-daylight.jpg"
+                alt="Dead by Daylight"
+              />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Dead by Daylight</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img src="assets/images/dirt-rally.jpg" alt="Dirt Rally" />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Dirt Rally</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img
+                src="assets/images/escape-from-tokarov.jpg"
+                alt="Escape from Tarkov"
+              />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Escape from Tarkov</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img
+                src="assets/images/euro-truck-simulator.jpg"
+                alt="Euro Truck Simulator"
+              />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Euro Truck Simulator</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img src="assets/images/medium.jpg" alt="Medium" />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Medium</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img
+                src="assets/images/plants-vs-zombies.jpg"
+                alt="Plantas vs Zombies: Garden Warfare"
+              />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Plantas vs Zombies: Garden Warfare</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-games-container__game">
+            <div class="featured-games-container__game-image">
+              <img
+                src="assets/images/tabs.jpg"
+                alt="Totally Accurate Battle Simulator"
+              />
+            </div>
+            <div class="featured-games-container__game-text">
+              <h3>Totally Accurate Battle Simulator</h3>
+              <p>Precio: 999.99 ARS</p>
+              <div class="featured-games-container__game-link">
+                <a href="#">Comprar ahora</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="featured-games-container">
-        <h2>Juegos destacados</h2>
-        <div>
-          <ul>
-            <li><h3>Juego1</h3></li>
-            <li><h3>Juego2</h3></li>
-            <li><h3>Juego3</h3></li>
-            <li><h3>Juego4</h3></li>
-            <li><h3>Juego5</h3></li>
-            <li><h3>Juego6</h3></li>
-            <li><h3>Juego7</h3></li>
-            <li><h3>Juego8</h3></li>
-            <li><h3>Juego9</h3></li>
-            <li><h3>Juego10</h3></li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </main>
-
     <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-container-social">
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Youtube</a></li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </li>
           </ul>
         </div>
         <div class="footer-container-terms">

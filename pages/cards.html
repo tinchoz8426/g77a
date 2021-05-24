@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G77A - Tarjetas</title>
-    <!-- -----Fuentes Google Font----- -->
+    <!-- Fuentes Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- -----Hoja CSS----- -->
+    <!-- Hoja CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- FontAwesome para iconos -->
+    <script
+      src="https://kit.fontawesome.com/9514dd5057.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <!-- Header -->
     <header>
       <div class="nav-container-top">
         <div class="nav-container-top__logo">
-          <img src="../assets/images/logo.webp" alt="Logo G77A" />
-          <h1>G77A</h1>
+          <a href="../index.html"
+            ><img src="../assets/images/logo.png" alt="Logo G77A"
+          /></a>
         </div>
         <div class="search-container">
           <form class="search-container__form" action="#" method="GET">
@@ -30,7 +37,9 @@
         </div>
         <div class="nav-container-top__sign">
           <ul>
-            <li><a href="#">Carrito</a></li>
+            <li>
+              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            </li>
             <li><a href="#">Iniciar sesion</a></li>
             <li><a href="#">Registrarse</a></li>
           </ul>
@@ -42,26 +51,219 @@
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="games.html">Juegos</a></li>
             <li><a href="cards.html">Tarjetas</a></li>
-            <li><a href="points.html">Puntos</a></li>
             <li><a href="about-us.html">Nosotros</a></li>
             <li><a href="contact.html">Contacto</a></li>
-            <li><a href="payment-methods.html">Formas de pago</a></li>
+            <li><a href="payment-methods.html">¿Como comprar?</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Main -->
-     
+    <main>
+      <!-- Seccion COMPRA TARJETAS DIGITALES, AL MEJOR PRECIO -->
+      <div class="games-title">
+        <h2>Compra tarjetas digitales, al mejor precio</h2>
+      </div>
+      <div class="main-container-games">
+        <!-- Barra lateral de busqueda -->
+        <aside>
+          <form class="main-container-games__form">
+            <div class="main-container-games__form-search">
+              <input type="text" placeholder="Buscar..." />
+            </div>
+            <label>Precio (ars)</label>
+            <div class="main-container-games__form-price">
+              <div>
+                <input type="number" />
+                <span>-</span>
+                <input type="number" />
+              </div>
+            </div>
+            <label>Categoria</label>
+            <div class="main-container-games__form-category">
+              <ul>
+                <li><input type="checkbox"><label>Steam</label></li>
+                <li><input type="checkbox"><label>Psn</label></li>
+                <li><input type="checkbox"><label>Xbox live</label></li>
+                <li><input type="checkbox"><label>Netflix</label></li>
+                <li><input type="checkbox"><label>Google Play</label></li>
+                <li><input type="checkbox"><label>Nintendo</label></li>
+                <li><input type="checkbox"><label>Origin</label></li>
+                <li><input type="checkbox"><label>Spotify</label></li>
+              </ul>
+            </div>
+          </form>
+        </aside>
+        <!-- Grilla de TARJETAS DIGITALES -->
+        <section>
+          <div class="games-container">
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/psn-card.jpg"
+                  alt="Tarjeta gift card"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/psn-card.jpg"
+                  alt="Tarjeta gift card"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/psn-card.jpg"
+                  alt="Tarjeta gift card"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/psn-card.jpg"
+                  alt="Tarjeta gift card"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img src="../assets/images/psn-card.jpg" alt="Tarjeta gift card" />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/psn-card.jpg"
+                  alt="Tarjeta gift card"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/psn-card.jpg"
+                  alt="Tarjeta gift card"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img src="../assets/images/psn-card.jpg" alt="Tarjeta gift card" />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/psn-card.jpg"
+                  alt="Tarjeta gift card"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/psn-card.jpg"
+                  alt="Tarjeta gift card"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Tarjeta Playstation Store</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
     <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-container-social">
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Youtube</a></li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </li>
           </ul>
         </div>
         <div class="footer-container-terms">

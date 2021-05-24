@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G77A - Juegos</title>
-    <!-- -----Fuentes Google Font----- -->
+    <!-- Fuentes Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- -----Hoja CSS----- -->
+    <!-- Hoja CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- FontAwesome para iconos -->
+    <script
+      src="https://kit.fontawesome.com/9514dd5057.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="nav-container-top">
         <div class="nav-container-top__logo">
-          <img src="../assets/images/logo.webp" alt="Logo G77A" />
-          <h1>G77A</h1>
+          <a href="../index.html"
+            ><img src="../assets/images/logo.png" alt="Logo G77A"
+          /></a>
         </div>
         <div class="search-container">
           <form class="search-container__form" action="#" method="GET">
@@ -30,7 +36,9 @@
         </div>
         <div class="nav-container-top__sign">
           <ul>
-            <li><a href="#">Carrito</a></li>
+            <li>
+              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            </li>
             <li><a href="#">Iniciar sesion</a></li>
             <li><a href="#">Registrarse</a></li>
           </ul>
@@ -42,112 +50,223 @@
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="games.html">Juegos</a></li>
             <li><a href="cards.html">Tarjetas</a></li>
-            <li><a href="points.html">Puntos</a></li>
             <li><a href="about-us.html">Nosotros</a></li>
             <li><a href="contact.html">Contacto</a></li>
-            <li><a href="payment-methods.html">Formas de pago</a></li>
+            <li><a href="payment-methods.html">¿Como comprar?</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
-    <!-- Table -->
-    <table class="promo">
-      <caption class="promo-title">
-        ¡Promoción del día!
-      </caption>
-      <thead>
-        <tr>
-          <th>Nombre del juego</th>
-          <th>Fecha de lanzamiento</th>
-          <th>Características</th>
-          <th>Requisitos</th>
-          <th>Comentarios</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Resident Evil Village</td>
-          <td>7 de Mayo de 2021</td>
-          <td>
-            <ul>
-              <li>
-                Inmersión en primera persona. Cada lucha por la supervivencia,
-                cada persecución a través de estrechos pasillos ocurre a través
-                de la perspectiva en primera persona - incluso con una pistola,
-                tienes que acercarte y eliminar al enemigo que te persigue
-              </li>
-              <li>
-                Una nueva pesadilla. La enigmática aldea alberga muchos tipos
-                nuevos de enemigos, desde los más pequeños y ágiles hasta los
-                más corpulentos y destructivos: tendrás que adaptarte a cada uno
-                de ellos si quieres eliminarlos con éxito;
-              </li>
-              <li>
-                Un pueblo que cobra vida. Es más que un simple telón de fondo
-                que alberga a varios personajes siniestros - para escapar del
-                terror, tienes que descubrir todos los secretos que se esconden
-                dentro;
-              </li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>SO: Windows 10 (64 bit)</li>
-              <li>Procesador: AMD Ryzen 3 1200 ／ Intel Core i5-7500</li>
-              <li>Memoria: 8 GB de RAM</li>
-              <li>
-                Gráficos: AMD Radeon RX 560 with 4GB VRAM ／ NVIDIA GeForce GTX
-                1050 Ti with 4GB VRAM
-              </li>
-              <li>DirectX: Versión 12</li>
-            </ul>
-          </td>
-          <td>
-            <ol>
-              <li>
-                Continuación directa de RE7. Uno de los mejores survival horror
-                que he jugado.
-              </li>
-              <li>
-                Village es muy buen juego, pero su principal enemigo es la
-                comparación con quienes le preceden
-              </li>
-              <li>
-                Ethan Winters vuelve a vivir una pesadilla. Otra vez. Notable
-                acabado y bien cuidado en todos los aspectos.
-              </li>
-              <li>
-                Mucha acción, terror psicológico, muchas armas, enemigos y
-                jefes. Muy estable, gran banda sonora.
-              </li>
-            </ol>
-          </td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="5">¡La promoción finaliza en 24 horas!</td>
-        </tr>
-      </tfoot>
-    </table>
-
-    <!-- Video -->
-    <div class="container-video-promo">
-      <video
-        src="../assets/videos/resident-evil-village.mp4"
-        controls
-        poster="../assets/images/poster-resident-evil-village.webp"
-      ></video>
-    </div>
+    <!-- Main -->
+    <main>
+      <!-- Seccion COMPRA LOS MEJORES JUEGOS, AL MEJOR PRECIO -->
+      <div class="games-title">
+        <h2>Compra los mejores juegos, al mejor precio</h2>
+      </div>
+      <div class="main-container-games">
+        <!-- Barra lateral de busqueda -->
+        <aside>
+          <form class="main-container-games__form">
+            <div class="main-container-games__form-search">
+              <input type="text" placeholder="Buscar..." />
+            </div>
+            <label>Precio (ars)</label>
+            <div class="main-container-games__form-price">
+              <div>
+                <input type="number" />
+                <span>-</span>
+                <input type="number" />
+              </div>
+            </div>
+            <label>Categoria</label>
+            <div class="main-container-games__form-category">
+              <ul>
+                <li><input type="checkbox"><label>Acción</label></li>
+                <li><input type="checkbox"><label>Aventura</label></li>
+                <li><input type="checkbox"><label>Carreras</label></li>
+                <li><input type="checkbox"><label>Deportes</label></li>
+                <li><input type="checkbox"><label>Lucha</label></li>
+                <li><input type="checkbox"><label>Plataforma</label></li>
+              </ul>
+            </div>
+            <label>Dispositivo</label>
+            <div class="main-container-games__form-category">
+              <ul>
+                <li><input type="checkbox"><label>Pc</label></li>
+                <li><input type="checkbox"><label>Xbox</label></li>
+                <li><input type="checkbox"><label>Ps4</label></li>
+              </ul>
+            </div>
+          </form>
+        </aside>
+        <!-- Grilla de JUEGOS -->
+        <section>
+          <div class="games-container">
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/resident-evil-village.jpg"
+                  alt="Resident Evil Village"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Resident Evil Village</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/battlefield-1.jpg"
+                  alt="Battlefield 1"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Battlefield 1</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/dark-solus-tres.jpg"
+                  alt="Dark Souls 3"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Dark Solus 3</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/dead-by-daylight.jpg"
+                  alt="Dead by Daylight"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Dead by Daylight</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img src="../assets/images/dirt-rally.jpg" alt="Dirt Rally" />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Dirt Rally</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/escape-from-tokarov.jpg"
+                  alt="Escape from Tarkov"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Escape from Tarkov</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/euro-truck-simulator.jpg"
+                  alt="Euro Truck Simulator"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Euro Truck Simulator</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img src="../assets/images/medium.jpg" alt="Medium" />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Medium</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/plants-vs-zombies.jpg"
+                  alt="Plantas vs Zombies: Garden Warfare"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Plantas vs Zombies: Garden Warfare</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+            <div class="games-container__game">
+              <div class="games-container__game-image">
+                <img
+                  src="../assets/images/tabs.jpg"
+                  alt="Totally Accurate Battle Simulator"
+                />
+              </div>
+              <div class="games-container__game-text">
+                <h3>Totally Accurate Battle Simulator</h3>
+                <p>Precio: 999.99 ARS</p>
+                <div class="games-container__game-link">
+                  <a href="#">Comprar ahora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-container-social">
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Youtube</a></li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </li>
           </ul>
         </div>
         <div class="footer-container-terms">
