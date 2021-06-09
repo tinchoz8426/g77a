@@ -1,16 +1,17 @@
+/* ----- BODY ----- */
 body{
     margin: 0;
-    background-color: #ADB5BD;
+    background: #6C757D;
     font-family: 'Roboto', sans-serif;
 }
 
-/* -----Barra de navegacion superior de todas las paginas----- */
-/* -----Barra de navegacion superior sector superior-----*/
+/* ----- Barra de navegacion superior de todas las paginas ----- */
+/* ----- Barra de navegacion superior sector superior -----*/
 .nav-container-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #9B9C9C;
+    background-color: #343A40;
     color: #F8F9FA;
     height: 80px;
 }
@@ -19,9 +20,21 @@ body{
     align-items: center;
     justify-content: center;
 }
+/* ----- Animacion logo página----- */
 .nav-container-top__logo img{
     height: 50px;
+    animation-duration: 3s;
+    animation-name: logo;
 }
+@keyframes logo {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }   
+}
+/* -----Fin animacion logo página----- */
 .search-container{
     display: flex;
     justify-content: center;
@@ -58,7 +71,7 @@ body{
 .nav-container-down{
     display: flex;
     justify-content: center;
-    background-color: #212529;
+    background: #31363b;
 }
 .nav-container-down nav ul {
     display: flex;
@@ -68,6 +81,15 @@ body{
 .nav-container-down li{
     padding: 0 20px;
 }
+/* -----Transformacion TRANSLATE ----- */
+.nav-container-down li:hover{
+    transform: translate(0, 0.1em);
+    -webkit-transform: translate(0, 0.1em);
+    -moz-transform: translate(0, 0.1em);
+    -ms-transform: translate(0, 0.1em);
+    -o-transform: translate(0, 0.1em);
+}
+/* -----Fin Transformacion TRANSLATE----- */
 .nav-container-down a{
     text-decoration: none;
     font-weight: bold;
@@ -80,23 +102,36 @@ body{
 
 
 
-/* -----Juegos destacados en pagina de INICIO----- */
+/* -----Juegos destacados en PÁGINA DE INICIO----- */
 .featured-games-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding-bottom: 20px;
     gap: 20px;
+    color: #F8F9FA;
 }
 .featured-games-container__game{
     display: flex;
     flex-direction: column;
     width: 15rem;
+    color: #343A40;
     background-color: #C4C4C4;
     justify-self: center;
     padding: 10px;
+    border-radius: 5px;
+    transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
 }
 .featured-games-container__game:hover{
     box-shadow: 0px 0px 20px #00000014;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
 }
 .featured-games-container__game-image img{
     width: 100%;
@@ -111,6 +146,9 @@ body{
     color: #F8F9FA;
     background-color: #6f7072;
     padding: 10px;
+}
+.featured-games-container__game-link a:hover{
+    background: linear-gradient(0deg, rgba(111,112,114,1) 0%, rgba(157,157,157,1) 100%);
 }
 .featured-games-containe__title{
     text-align: center;
@@ -130,14 +168,21 @@ body{
     text-transform: uppercase;
     color: #F8F9FA;
 }
-
-
-
-/* -----Formulario de contacto----- */
-form label,
-select{
-    display: block;
-    margin: 10px 0;
+.hero-container__best-seller img,
+.hero-container__offer img{
+    transition:all 0.6s;
+    -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+}
+.hero-container__best-seller img:hover,
+.hero-container__offer img:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 
@@ -175,24 +220,32 @@ select{
 /* -----Pagina JUEGOS y TARJETAS----- */
 .games-title{
     text-align: center;
+    color: #F8F9FA;
 }
 .main-container-games{
     display: grid;
     grid-template-columns: 1fr 5fr;
+    padding-bottom: 20px;
     gap: 20px;
 }
 .main-container-games aside{
-    margin-left: 10px;
-    background-color: #6f7072;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 62rem;
+    background-color: #343A40;
     text-align: center;
     color: #F8F9FA;
     text-transform: uppercase;
+    box-shadow: 0px 0px 20px #00000014;
 }
 .main-container-games__form-search{
-    margin-top: 20px;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
 }
+
 .games-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -205,10 +258,20 @@ select{
     width: 40%;
     justify-content: center;
 }
-
+.category-label{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 5px 0;
+}
+.device-label{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 5px 0;
+}
 .main-container-games__form-category ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .main-container-games__form-category li{
     display: flex;
@@ -216,27 +279,68 @@ select{
     align-items: center;
 }
 .games-container__game{
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-    background-color: #C4C4C4;
-    justify-self: center;
-    padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        color: #343A40;
+        background-color: #C4C4C4;
+        justify-self: center;
+        padding: 10px;
+        border-radius: 5px;
+        transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.5s;
+        -moz-transition: ease-in-out 0.5s;
+        -ms-transition: ease-in-out 0.5s;
+        -o-transition: ease-in-out 0.5s;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+.games-container__game:hover{
+    box-shadow: 0px 0px 20px #00000014;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
 }
 .games-container__game-image img{
     width: 100%;
 }
-
+.games-container__game-text{
+    text-align: center;
+}
+.games-container__game-link a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #F8F9FA;
+    background-color: #6f7072;
+    padding: 10px;
+}
+.games-container__game-link a:hover{
+    background: linear-gradient(0deg, rgba(111,112,114,1) 0%, rgba(157,157,157,1) 100%);
+}
+.games-containe__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    grid-column: 1 / 6;
+}
 
 
 /* -----Pagina NOSOTROS----- */
 .aboutus-container{
     display: flex;
+    align-items: center;
     margin: 5%;
+    color: #F8F9FA;
     text-transform: uppercase;
 }
 .aboutus-container__text{
     text-align: center;
+    margin: 50px;
 }
 .aboutus-container__image img{
     width: 100%;
@@ -251,6 +355,12 @@ select{
 
 
 /* -----Pagina ¿COMO COMPRAR? */
+
+.how-to-buy,
+.payment{
+    color: #F8F9FA;
+}
+
 .payment-title{
     text-align: center;
     text-transform: uppercase;
@@ -272,6 +382,7 @@ select{
 
 /* -----Pagina CONTACTO----- */
 .contact-container{
+    color: #F8F9FA;
     display: flex;
     justify-content: space-around;
 }
@@ -298,4 +409,76 @@ select{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+/* -----Formulario de contacto----- */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label{
+    margin: 5px 0;
+}
+.contact-form input{
+    color: #F8F9FA;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #212529;
+    background-color: transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.contact-form input:focus{
+    color:#F8F9FA
+}
+.contact-form select{
+    background: transparent;
+    border: 1px solid #212529;
+    color: #F8F9FA;
+    margin-bottom: 20px;
+}
+.contact-form select:focus{
+    color: #212529;
+}
+.contact-form textarea{
+    color: #F8F9FA;
+    border: 1px solid #212529;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    resize: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.contact-form button{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 40px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.contact-form button:hover{
+    cursor: pointer;
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+}
+.contact-form button:active{
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
 }
