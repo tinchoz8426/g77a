@@ -1,0 +1,23 @@
+//Prueba de LISTA
+$button-color: nth($color-list, $n: 5);
+.btn{
+    background-color: $color-gainsboro;
+    color: $button-color;
+    border-color: $color-charleston-green;
+    &:hover{
+        background-color: $color-charleston-green;
+        color: $color-gainsboro;
+        border-color: $color-gainsboro;
+    }
+    &:focus{
+        box-shadow: 0 0 0.4rem #f8f9fa63;
+    }
+}
+
+
+.accordion-button:not(.collapsed){
+    color: $color-cultured;
+}
+.accordion-button:focus{
+    box-shadow: 0 0 0.4rem #f8f9fa63;
+}

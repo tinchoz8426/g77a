@@ -1,0 +1,57 @@
+//Prueba de MIXIN
+@mixin color-and-border ($color, $border){
+    color: $color;
+    border-bottom: $border;
+}
+
+.about-us-container,
+.where-container{
+    @include color-and-border($color-cultured, none);
+    img{
+        box-shadow: $box-shadow !important;
+    }
+}
+.about-us__row-team{
+    @include color-and-border(none, 1px solid $color-charleston-green);
+}
+
+//Prueba de IF
+$text-colorabout-us: default;
+.about-us__col-team{
+    @if $text-colorabout-us == default{
+        color: $color-cultured;
+    }
+    @else if $text-colorabout-us == color-gun-metal{
+        color: $color-gun-metal;
+    }
+    @else{
+        color: $color-cultured-2;
+    }
+}
+
+//Prueba de FOR (sin funcionalidad, solo para probar)
+@for $i from 1 through 5 {
+    .about-us__col-team h2, .where__col h2{
+        font-size: $i * 0.4rem;
+    }
+}
+
+//Prueba de EACH
+$font-styles-about-us: $font-list;
+@each $font-style in $font-styles-about-us {
+    .font-#{$font-style}{
+        font-size: $font-style;
+    }
+}
+
+//Prueba MAP
+$color-font-where:(
+    color-1: $color-davys-grey,
+    color-2: $color-cultured,
+    color-3: $color-gun-metal
+);
+@each $k, $v in $color-font-where {
+    .font-#{$k}{
+        color: $v;
+    }
+}

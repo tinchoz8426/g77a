@@ -1,142 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>G77A - Acerca de nosotros</title>
-    <!-- Fuentes Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Hoja CSS -->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <!-- FontAwesome para iconos -->
-    <script
-      src="https://kit.fontawesome.com/9514dd5057.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="nav-container-top">
-        <div class="nav-container-top__logo">
-          <a href="../index.html"
-            ><img src="../assets/images/logo.png" alt="Logo G77A"
-          /></a>
-        </div>
-        <div class="search-container">
-          <form class="search-container__form" action="#" method="GET">
-            <input type="search" class="search-container__search" />
-            <input type="submit" value="Buscar" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Este es nuestro equipo y acá es donde trabajamos! | G77A</title>
+  <meta name="description" content="Nuestro equipo trabaja todos los días para ofrecerte el mejor servicio y experiencia en tu compra, en nuestras oficinas con la mejor infraestructura y tecnología.">
+  <meta name="keywords" content="nuestro equipo, donde estamos, ubicación, trabajo">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Mi CSS -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img class="navbar__image" src="../assets/images/logo.png" alt="Logo" width="100" height="32">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar__list navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="games.html">Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="cards.html">Tarjetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="about-us.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="contact.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="how-to-buy.html">¿Cómo comprar?</a>
+          </li>
+        </ul>
+        <div class="navbar__sign-in d-flex align-items-center">
+          <!-- Carrito de compras trigger modal -->
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
+              class="bi bi-cart3 text-secondary fs-2 pe-3"></i></a>
+          <!-- Modal -->
+          <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="modal-cart-label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-cart-label">Tu carrito de compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Tu carrito de compras esta vacio
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex">
+            <button class="btn me-2" type="submit">Registrarse</button>
+            <button class="btn" type="submit">Iniciar sesión</button>
           </form>
         </div>
-        <div class="nav-container-top__sign">
-          <ul>
-            <li>
-              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!-- Main -->
+  <main>
+    <!-- Seccion NUESTRO EQUIPO -->
+    <section class="about-us-container">
+      <div class="container">
+        <div class="about-us__row-team row d-flex justify-content-center align-items-center">
+          <div class="about-us__col-team col-lg-5 mt-5">
+            <h2 class="text-uppercase text-center">Nuestro equipo</h2>
+            <p class="text-center">Aquí en G77A, somos mucho más que simples compañeros de trabajo. Somos un equipo y
+              una familia de profesionales con ideas afines que comparten la misma pasión por los juegos. Nos esforzamos
+              a diario por la profesionalidad y la excelencia. Al hacerlo, proporcionamos el acceso y los medios más
+              fáciles a los videojuegos y servicios para las comunidades de jugadores de todo el mundo.</p>
+          </div>
+          <div class="col-lg-5">
+            <img class="about-us__img img-fluid rounded-3 mb-sm-5 my-lg-5 mb-5" src="../assets/images/us.jpg"
+              alt="Nuestro equipo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion DONDE ESTAMOS -->
+    <section class="where-container">
+      <div class="container">
+        <div class="where__row row d-flex justify-content-center align-items-center">
+          <div class="where__col col-lg-5">
+            <h2 class="text-uppercase text-center">Donde estamos</h2>
+            <p class="text-center">Nuestra sede está ubicada en la Ciudad de La Plata, capital de la Provincia de Buenos
+              Aires. Una de las ciudades mas grandes del País. Ciudad de buena comida, vistas impresionantes, zonas
+              deportivas y de ocio. Ciudad de rica tradición y grandes ofertas culturales</p>
+          </div>
+          <div class="col-lg-5">
+            <img class="where__image img-fluid rounded-3 mb-sm-5 my-lg-5 mb-5" src="../assets/images/offices.jpg"
+              alt="Nuestra ubicación">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-dark py-5 color-text">
+    <div class="footer-container container">
+      <div class="footer-container__row row justify-content-center border-bottom">
+        <div class="footer__col-g77a col-lg-3 col-md-3 col-xl-5">
+          <h3 class="text-center text-uppercase fw-bold mb-3">g77a</h3>
+          <p class="text-center">Consigue las mejores ofertas de juegos antes</p>
+          <form class="row g-3 justify-content-center">
+            <div class="col-auto">
+              <input type="email" class="form-control" placeholder="Correo electronico" required>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn mb-3" data-bs-toggle="modal"
+                data-bs-target="#modal-suscription">Suscribirse
+              </button>
+            </div>
+          </form>
+          <!-- Modal Suscripcion -->
+          <div class="modal fade" id="modal-suscription" tabindex="-1" aria-labelledby="modal-suscription-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-suscription-label">¡Gracias por suscribirte!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Recibiras las mejores ofertas semanalmente.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Columna COMPRAR -->
+        <div class="footer__col-buy col-lg-2 col-md-2 col-xl-2">
+          <h3 class="h6 text-uppercase mb-4">Comprar</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="text-decoration-none" href="how-to-buy.html">Cómo comprar</a>
             </li>
-            <li><a href="#">Iniciar sesion</a></li>
-            <li><a href="#">Registrarse</a></li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="games.html">Lista de juegos</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="cards.html">Lista de tarjetas</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="../index.html">Tienda</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Columna AYUDA -->
+        <div class="footer__col-help col-lg-2 col-md-2 col-xl-2">
+          <h3 class="h6 text-uppercase mb-4">Ayuda</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="text-decoration-none" href="faqs.html">FAQ</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="how-to-buy.html">Cómo activar el juego</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="contact.html">Crear un ticket</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="contact.html">Centro de seguridad</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Columna CONTACTANOS -->
+        <div class="footer__col-contact col-lg-3 col-md-3 col-xl-3">
+          <h3 class="h6 text-uppercase mb-4">Contactanos</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-house-door fs-5 pe-3"></i>La Plata, Argentina</li>
+            <li class="mb-2"><i class="bi bi-envelope fs-5 pe-3"></i>g77a@info.com</li>
+            <li class="mb-2"><i class="bi bi-telephone fs-5 pe-3"></i>+ 54 221 4987653</li>
           </ul>
         </div>
       </div>
-      <div class="nav-container-down">
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="games.html">Juegos</a></li>
-            <li><a href="cards.html">Tarjetas</a></li>
-            <li><a href="about-us.html">Nosotros</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-            <li><a href="payment-methods.html">¿Como comprar?</a></li>
+      <!-- Fila DERECHOS RESERVADOS e ICONOS DE REDES SOCIALES -->
+      <div class="row mt-3">
+        <div class="col-md-7 col-lg-8">
+          <p>Copyright 2021 &copy; G77A. Todos los derechos reservados</p>
+        </div>
+        <div class="col-md-5 col-lg-4 text-md-end">
+          <ul class="list-unstyled">
+            <li class="list-inline-item"><a href="https://www.facebook.com/martin.florencia.750" class="text-white"
+                target="_blank"><i class="bi bi-facebook fs-5 pe-2"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://twitter.com/tinchoz8426" class="text-white" target="_blank">
+                <i class="bi bi-twitter fs-5 pe-2"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/tz_estudios/" class="text-white"
+                target="_blank"> <i class="bi bi-instagram fs-5 pe-2"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCPsniHlxnUU750ONef0QDcQ"
+                class="text-white" target="_blank"><i class="bi bi-youtube fs-5 pe-2"></i></a></li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
+    </div>
+  </footer>
 
-    <!-- Main -->
-    <main>
-      <div>
-        <!-- Seccion NUESTRO EQUIPO -->
-        <section>
-          <div class="aboutus-container">
-            <div class="aboutus-container__text">
-              <h2>Nuestro equipo</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique qui recusandae eius harum repellendus. Vel velit dicta
-                dolor sint neque, autem numquam, sequi, molestiae corporis sit
-                error commodi iusto? Laborum officia aliquid blanditiis,
-                adipisci, ex perspiciatis cumque ab voluptas laboriosam
-                dignissimos optio voluptatem assumenda expedita facere
-                exercitationem, amet accusamus ipsum!
-              </p>
-            </div>
-            <div class="aboutus-container__image">
-              <img
-                src="../assets/images/nosotros.jpg"
-                alt="Acerca de nosotros"
-              />
-            </div>
-          </div>
-        </section>
-        <!-- Seccion DONDE ESTAMOS -->
-        <section>
-          <div class="aboutus-container">
-            <div class="aboutus-container__text">
-              <h2>Donde estamos</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique qui recusandae eius harum repellendus. Vel velit dicta
-                dolor sint neque, autem numquam, sequi, molestiae corporis sit
-                error commodi iusto? Laborum officia aliquid blanditiis,
-                adipisci, ex perspiciatis cumque ab voluptas laboriosam
-                dignissimos optio voluptatem assumenda expedita facere
-                exercitationem, amet accusamus ipsum!
-              </p>
-            </div>
-            <div class="aboutus-container__image">
-              <img
-                src="../assets/images/donde-estamos.jpg"
-                alt="Nuestra ubicación"
-              />
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-container-social">
-          <ul>
-            <li>
-              <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-container-terms">
-          <ul>
-            <li><a href="#">TERMINOS Y CONDICIONES</a></li>
-            <li><a href="#">PAGO SEGURO</a></li>
-            <li><a href="#">POLITICAS DE PRIVACIDAD</a></li>
-            <li><a href="#">PREGUNTAS FRECUENTES</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </body>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

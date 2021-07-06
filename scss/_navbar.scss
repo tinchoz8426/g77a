@@ -1,0 +1,22 @@
+$color-background: color;
+.bg-dark{
+    @if $color-background == color {
+        background-color: $color-gun-metal !important;        
+    }
+    @else {
+        background-color: $color-charleston-green !important;
+    }
+}
+
+.nav-link,
+.bi-cart3{
+    color: $color-light-gray !important;
+}
+
+.nav-item:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}

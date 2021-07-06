@@ -1,484 +1,205 @@
-/* ----- BODY ----- */
-body{
-    margin: 0;
-    background: #6C757D;
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+.bg-dark {
+  background-color: #343A40 !important;
 }
 
-/* ----- Barra de navegacion superior de todas las paginas ----- */
-/* ----- Barra de navegacion superior sector superior -----*/
-.nav-container-top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #343A40;
-    color: #F8F9FA;
-    height: 80px;
-}
-.nav-container-top__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* ----- Animacion logo página----- */
-.nav-container-top__logo img{
-    height: 50px;
-    animation-duration: 3s;
-    animation-name: logo;
-}
-@keyframes logo {
-    0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }   
-}
-/* -----Fin animacion logo página----- */
-.search-container{
-    display: flex;
-    justify-content: center;
-    width: 30%;
-}
-.search-container__form{
-    display: flex;
-    width: 100%;
-}
-.search-container__search{
-    display: flex;
-    width: 100%;
-}
-.nav-container-top__sign ul{
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-.nav-container-top__sign li{
-    list-style: none;
-    margin: 0 10px;
-}
-.nav-container-top__sign a{
-    text-decoration: none;
-    color: #F8F9FA;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.nav-container-top__sign a:hover{
-    text-decoration: underline;
+.nav-link,
+.bi-cart3 {
+  color: #CED4DA !important;
 }
 
-/* -----Barra de navegacion superior sector inferior-----*/
-.nav-container-down{
-    display: flex;
-    justify-content: center;
-    background: #31363b;
-}
-.nav-container-down nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-.nav-container-down li{
-    padding: 0 20px;
-}
-/* -----Transformacion TRANSLATE ----- */
-.nav-container-down li:hover{
-    transform: translate(0, 0.1em);
-    -webkit-transform: translate(0, 0.1em);
-    -moz-transform: translate(0, 0.1em);
-    -ms-transform: translate(0, 0.1em);
-    -o-transform: translate(0, 0.1em);
-}
-/* -----Fin Transformacion TRANSLATE----- */
-.nav-container-down a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #F8F9FA;
-    text-transform: uppercase;
-}
-.nav-container-down a:hover{
-    text-decoration: underline;
+.nav-item:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
 }
 
-
-
-/* -----Juegos destacados en PÁGINA DE INICIO----- */
-.featured-games-container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding-bottom: 20px;
-    gap: 20px;
-    color: #F8F9FA;
-}
-.featured-games-container__game{
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-    color: #343A40;
-    background-color: #C4C4C4;
-    justify-self: center;
-    padding: 10px;
-    border-radius: 5px;
-    transition: ease-in-out 0.5s;
-    -webkit-transition: ease-in-out 0.5s;
-    -moz-transition: ease-in-out 0.5s;
-    -ms-transition: ease-in-out 0.5s;
-    -o-transition: ease-in-out 0.5s;
-}
-.featured-games-container__game:hover{
-    box-shadow: 0px 0px 20px #00000014;
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    -o-transform: scale(1.02);
-}
-.featured-games-container__game-image img{
-    width: 100%;
-}
-.featured-games-container__game-text{
-    text-align: center;
-}
-.featured-games-container__game-link a{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #F8F9FA;
-    background-color: #6f7072;
-    padding: 10px;
-}
-.featured-games-container__game-link a:hover{
-    background: linear-gradient(0deg, rgba(111,112,114,1) 0%, rgba(157,157,157,1) 100%);
-}
-.featured-games-containe__title{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: large;
-    grid-column: 1 / 6;
+.btn {
+  background-color: #DEE2E6;
+  color: #212529;
+  border-color: #212529;
 }
 
-
-
-/* -----Carrusel de imagenes en pagina de INICIO----- */
-.hero-container{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding-bottom: 30px;
-    text-transform: uppercase;
-    color: #F8F9FA;
-}
-.hero-container__best-seller img,
-.hero-container__offer img{
-    transition:all 0.6s;
-    -webkit-transition:all 0.6s;
-    -moz-transition:all 0.6s;
-    -ms-transition:all 0.6s;
-    -o-transition:all 0.6s;
-}
-.hero-container__best-seller img:hover,
-.hero-container__offer img:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+.btn:hover {
+  background-color: #212529;
+  color: #DEE2E6;
+  border-color: #DEE2E6;
 }
 
-
-
-/* -----Footer de todas las paginas----- */
-.footer-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #343A40;
-}
-.footer-container-social ul{
-    display: flex;
-    list-style: none;
-}
-.footer-container-social a{
-    display: flex;
-    text-decoration: none;
-    color: #F8F9FA;
-    padding: 0 15px;
-}
-.footer-container-terms ul{
-    display: flex;
-    list-style: none;
-}
-.footer-container-terms a{
-    display: flex;
-    text-decoration: none;
-    color: #F8F9FA;
-    padding: 0 15px;
+.btn:focus {
+  -webkit-box-shadow: 0 0 0.4rem #f8f9fa63;
+          box-shadow: 0 0 0.4rem #f8f9fa63;
 }
 
-
-
-/* -----Pagina JUEGOS y TARJETAS----- */
-.games-title{
-    text-align: center;
-    color: #F8F9FA;
-}
-.main-container-games{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    padding-bottom: 20px;
-    gap: 20px;
-}
-.main-container-games aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1rem;
-    margin-bottom: 62rem;
-    background-color: #343A40;
-    text-align: center;
-    color: #F8F9FA;
-    text-transform: uppercase;
-    box-shadow: 0px 0px 20px #00000014;
-}
-.main-container-games__form-search{
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
+.accordion-button:not(.collapsed) {
+  color: #F8F9FA;
 }
 
-.games-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-.main-container-games__form-price{
-    display: flex;
-}
-.main-container-games__form-price input{
-    width: 40%;
-    justify-content: center;
-}
-.category-label{
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0 5px 0;
-}
-.device-label{
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0 5px 0;
-}
-.main-container-games__form-category ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.main-container-games__form-category li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.games-container__game{
-        display: flex;
-        flex-direction: column;
-        width: 15rem;
-        color: #343A40;
-        background-color: #C4C4C4;
-        justify-self: center;
-        padding: 10px;
-        border-radius: 5px;
-        transition: ease-in-out 0.5s;
-        -webkit-transition: ease-in-out 0.5s;
-        -moz-transition: ease-in-out 0.5s;
-        -ms-transition: ease-in-out 0.5s;
-        -o-transition: ease-in-out 0.5s;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-}
-.games-container__game:hover{
-    box-shadow: 0px 0px 20px #00000014;
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    -o-transform: scale(1.02);
-}
-.games-container__game-image img{
-    width: 100%;
-}
-.games-container__game-text{
-    text-align: center;
-}
-.games-container__game-link a{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #F8F9FA;
-    background-color: #6f7072;
-    padding: 10px;
-}
-.games-container__game-link a:hover{
-    background: linear-gradient(0deg, rgba(111,112,114,1) 0%, rgba(157,157,157,1) 100%);
-}
-.games-containe__title{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: large;
-    grid-column: 1 / 6;
+.accordion-button:focus {
+  -webkit-box-shadow: 0 0 0.4rem #f8f9fa63;
+          box-shadow: 0 0 0.4rem #f8f9fa63;
 }
 
-
-/* -----Pagina NOSOTROS----- */
-.aboutus-container{
-    display: flex;
-    align-items: center;
-    margin: 5%;
-    color: #F8F9FA;
-    text-transform: uppercase;
-}
-.aboutus-container__text{
-    text-align: center;
-    margin: 50px;
-}
-.aboutus-container__image img{
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.card {
+  background-color: #CED4DA;
+  border-color: #CED4DA;
+  color: #212529;
+  -webkit-box-shadow: 0 0 10px #00000079;
+          box-shadow: 0 0 10px #00000079;
+  transition: ease-in-out 0.2s;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
 }
 
-
-
-/* -----Pagina ¿COMO COMPRAR? */
-
-.how-to-buy,
-.payment{
-    color: #F8F9FA;
+.card .title {
+  color: #212529;
 }
 
-.payment-title{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: x-large;
-}
-.payment-text{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-.payment-methods-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    text-transform: uppercase;
+.card .badge {
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
+.card:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
 
+.faq__card {
+  background-color: #495057;
+  border-color: #CED4DA;
+  color: #212529;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  transition: ease-in-out 0.2s;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+}
 
-/* -----Pagina CONTACTO----- */
-.contact-container{
-    color: #F8F9FA;
-    display: flex;
-    justify-content: space-around;
+.modal-content {
+  background-color: #343A40 !important;
+  color: #F8F9FA;
 }
-.contact-pursache-problem__title{
-    font-size: 3.5rem;
-    max-width: 400px;
+
+.modal-content .btn-close {
+  background-color: #F8F9FA;
 }
-.contact-pursache-problem__text{
-    font-size: 1.5rem;
+
+.about-us-container,
+.where-container {
+  color: #F8F9FA;
+  border-bottom: none;
 }
-.contact-pursache-problem__text a{
-    text-decoration: none;
-    color: rgb(238, 238, 36);
+
+.about-us-container img,
+.where-container img {
+  -webkit-box-shadow: 0 0 10px #00000079 !important;
+          box-shadow: 0 0 10px #00000079 !important;
 }
-.contact-pursache-problem__link{
-    display: inline-block;
-    background-color: rgb(238, 238, 36);
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #212529;
-    padding: 10px 50px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+
+.about-us__row-team {
+  color: none;
+  border-bottom: 1px solid #212529;
 }
-/* -----Formulario de contacto----- */
-.contact-form{
-    display: flex;
-    flex-direction: column;
+
+.about-us__col-team {
+  color: #F8F9FA;
 }
-.contact-form label{
-    margin: 5px 0;
+
+.about-us__col-team h2, .where__col h2 {
+  font-size: 0.4rem;
 }
-.contact-form input{
-    color: #F8F9FA;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #212529;
-    background-color: transparent;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+
+.about-us__col-team h2, .where__col h2 {
+  font-size: 0.8rem;
 }
-.contact-form input:focus{
-    color:#F8F9FA
+
+.about-us__col-team h2, .where__col h2 {
+  font-size: 1.2rem;
 }
-.contact-form select{
-    background: transparent;
-    border: 1px solid #212529;
-    color: #F8F9FA;
-    margin-bottom: 20px;
+
+.about-us__col-team h2, .where__col h2 {
+  font-size: 1.6rem;
 }
-.contact-form select:focus{
-    color: #212529;
+
+.about-us__col-team h2, .where__col h2 {
+  font-size: 2rem;
 }
-.contact-form textarea{
-    color: #F8F9FA;
-    border: 1px solid #212529;
-    border-radius: 5px;
-    background-color: transparent;
-    margin-bottom: 20px;
-    resize: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+
+.font-400 {
+  font-size: 400;
 }
-.contact-form button{
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
-    height: 40px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+
+.font-italic {
+  font-size: italic;
 }
-.contact-form button:hover{
-    cursor: pointer;
-    transform: scale(0.98);
-    -webkit-transform: scale(0.98);
-    -moz-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    -o-transform: scale(0.98);
+
+.font-700 {
+  font-size: 700;
 }
-.contact-form button:active{
-    transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    -o-transform: scale(1.01);
+
+.font-color-1 {
+  color: #495057;
 }
+
+.font-color-2 {
+  color: #F8F9FA;
+}
+
+.font-color-3 {
+  color: #343A40;
+}
+
+.text-muted {
+  color: #CED4DA !important;
+}
+
+.checkout-title {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.back-link {
+  font-style: italic;
+}
+
+body {
+  background-color: #6C757D;
+  font-family: "Roboto", sans-serif;
+}
+
+.color-text {
+  color: #F8F9FA;
+}
+
+a {
+  color: #F8F9FA;
+}
+
+a:hover {
+  color: #495057;
+}
+
+.container-hero {
+  background-color: #495057;
+}
+
+.container-hero__carousel-item {
+  -webkit-box-shadow: 0 0 10px #00000079;
+          box-shadow: 0 0 10px #00000079;
+}
+
+.accordion-item,
+.accordion-button {
+  background-color: #6C757D;
+}
+/*# sourceMappingURL=styles.css.map */

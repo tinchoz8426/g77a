@@ -1,283 +1,386 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>G77A - Juegos</title>
-    <!-- Fuentes Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Hoja CSS -->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <!-- FontAwesome para iconos -->
-    <script
-      src="https://kit.fontawesome.com/9514dd5057.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="nav-container-top">
-        <div class="nav-container-top__logo">
-          <a href="../index.html"
-            ><img src="../assets/images/logo.png" alt="Logo G77A"
-          /></a>
-        </div>
-        <div class="search-container">
-          <form class="search-container__form" action="#" method="GET">
-            <input type="search" class="search-container__search" />
-            <input type="submit" value="Buscar" />
-          </form>
-        </div>
-        <div class="nav-container-top__sign">
-          <ul>
-            <li>
-              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
-            </li>
-            <li><a href="#">Iniciar sesion</a></li>
-            <li><a href="#">Registrarse</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="nav-container-down">
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="games.html">Juegos</a></li>
-            <li><a href="cards.html">Tarjetas</a></li>
-            <li><a href="about-us.html">Nosotros</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-            <li><a href="payment-methods.html">¿Como comprar?</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- Main -->
-    <main>
-      <!-- Seccion COMPRA LOS MEJORES JUEGOS, AL MEJOR PRECIO -->
-      <div class="games-title">
-        <h2>Compra los mejores juegos, al mejor precio</h2>
-      </div>
-      <div class="main-container-games">
-        <!-- Barra lateral de busqueda -->
-        <aside>
-          <form class="main-container-games__form">
-            <div class="main-container-games__form-search">
-              <input type="text" placeholder="Buscar..." />
-            </div>
-            <label>Precio (ars)</label>
-            <div class="main-container-games__form-price">
-              <div>
-                <input type="number" />
-                <span>-</span>
-                <input type="number" />
-              </div>
-            </div>
-            <div class="main-container-games__form-category">
-              <label class="category-label">Categoria</label>
-              <ul>
-                <li><input type="checkbox" /><label>Acción</label></li>
-                <li><input type="checkbox" /><label>Aventura</label></li>
-                <li><input type="checkbox" /><label>Carreras</label></li>
-                <li><input type="checkbox" /><label>Deportes</label></li>
-                <li><input type="checkbox" /><label>Lucha</label></li>
-                <li><input type="checkbox" /><label>Plataforma</label></li>
-              </ul>
-            </div>
-            <div class="main-container-games__form-category">
-              <label class="device-label">Dispositivo</label>
-              <ul>
-                <li><input type="checkbox" /><label>Pc</label></li>
-                <li><input type="checkbox" /><label>Xbox</label></li>
-                <li><input type="checkbox" /><label>Ps4</label></li>
-              </ul>
-            </div>
-          </form>
-        </aside>
-        <!-- Grilla de JUEGOS -->
-        <section>
-          <div class="games-container">
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img
-                  src="../assets/images/resident-evil-village.jpg"
-                  alt="Resident Evil Village"
-                />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Resident Evil Village</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Compra códigos digitales para videojuegos más baratos! | G77A</title>
+  <meta name="description" content="¡Visita G77A y compra los mejores juegos para PC, Xbox y Playstation! ¡Consigue los códigos digitales mas baratos y disfruta! ¡Entra!">
+  <meta name="keywords" content="Juegos, PC, Xbox, Playstation, digitales, códigos">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Mi CSS -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img class="navbar__image" src="../assets/images/logo.png" alt="Logo" width="100" height="32">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar__list navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="games.html">Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="cards.html">Tarjetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="about-us.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="contact.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="how-to-buy.html">¿Cómo comprar?</a>
+          </li>
+        </ul>
+        <div class="navbar__sign-in d-flex align-items-center">
+          <!-- Carrito de compras trigger modal -->
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
+              class="bi bi-cart3 text-secondary fs-2 pe-3"></i></a>
+          <!-- Modal -->
+          <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="modal-cart-label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-cart-label">Tu carrito de compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img
-                  src="../assets/images/battlefield-1.jpg"
-                  alt="Battlefield 1"
-                />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Battlefield 1</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
-                </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img
-                  src="../assets/images/dark-solus-tres.jpg"
-                  alt="Dark Souls 3"
-                />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Dark Solus 3</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
-                </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img
-                  src="../assets/images/dead-by-daylight.jpg"
-                  alt="Dead by Daylight"
-                />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Dead by Daylight</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
-                </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img src="../assets/images/dirt-rally.jpg" alt="Dirt Rally" />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Dirt Rally</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
-                </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img
-                  src="../assets/images/escape-from-tokarov.jpg"
-                  alt="Escape from Tarkov"
-                />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Escape from Tarkov</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
-                </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img
-                  src="../assets/images/euro-truck-simulator.jpg"
-                  alt="Euro Truck Simulator"
-                />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Euro Truck Simulator</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
-                </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img src="../assets/images/medium.jpg" alt="Medium" />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Medium</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
-                </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img
-                  src="../assets/images/plants-vs-zombies.jpg"
-                  alt="Plantas vs Zombies: Garden Warfare"
-                />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Plantas vs Zombies: Garden Warfare</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
-                </div>
-              </div>
-            </div>
-            <div class="games-container__game">
-              <div class="games-container__game-image">
-                <img
-                  src="../assets/images/tabs.jpg"
-                  alt="Totally Accurate Battle Simulator"
-                />
-              </div>
-              <div class="games-container__game-text">
-                <h3>Totally Accurate Battle Simulator</h3>
-                <p>Precio: 999.99 ARS</p>
-                <div class="games-container__game-link">
-                  <a href="#">Comprar ahora</a>
+                <div class="modal-body">
+                  Tu carrito de compras esta vacio
                 </div>
               </div>
             </div>
           </div>
-        </section>
+          <form class="d-flex">
+            <button class="btn me-2" type="submit">Registrarse</button>
+            <button class="btn" type="submit">Iniciar sesión</button>
+          </form>
+        </div>
       </div>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-container-social">
-          <ul>
-            <li>
-              <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+    </div>
+  </nav>
+  <!-- Main -->
+  <main>
+    <div class="container mt-4">
+      <h1 class="text-center text-uppercase fs-2 color-text">Tienda G77A - Juegos para PC, Xbox y Playstation</h1>
+    </div>
+    <!-- Seccion COMPRA LOS MEJORES JUEGOS, AL MEJOR PRECIO -->
+    <section class="games-container mt-4">
+      <!-- Primera fila de cards -->
+      <div class="games__first-container container my-lg-4 mb-sm-4 mb-md-0">
+        <div class="games__first-row row d-flex justify-content-center align-items-center">
+          <h2 class="games__text-title text-center text-white text-uppercase">Compra los mejores juegos, al mejor precio
+          </h2>
+          <div class="games__first-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
+            <div class="card">
+              <span class="badge bg-warning position-absolute">Nuevo</span>
+              <img src="../assets/images/card-resident-evil-village.jpg" class="card-img-top img"
+                alt="Resident evil Village">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Resident evil Village</h5>
+                <p class="card-text text-center text-uppercase">Precio: 1099 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__second-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
+            <div class="card">
+              <img src="../assets/images/card-dark-solus-tres.jpg" class="card-img-top img" alt="Dark Souls 3">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Dark Souls 3</h5>
+                <p class="card-text text-center text-uppercase">Precio: 569 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__third-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
+            <div class="card">
+              <img src="../assets/images/card-battlefield-1.jpg" class="card-img-top img" alt="Battlefield 1">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Battlefield 1</h5>
+                <p class="card-text text-center text-uppercase">Precio: 829 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__quarter-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-2">
+            <div class="card">
+              <span class="badge bg-warning position-absolute">Nuevo</span>
+              <img src="../assets/images/card-dead-by-daylight.jpg" class="card-img-top img" alt="Dead by daylight">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Dead by daylight</h5>
+                <p class="card-text text-center text-uppercase">Precio: 999 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Segunda fila de cards -->
+      <div class="games__second-container container my-lg-4">
+        <div class="games__second-row row d-flex justify-content-center align-items-center">
+          <div class="games__first-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
+            <div class="card">
+              <img src="../assets/images/card-dirt-rally.jpg" class="card-img-top img" alt="Dirt Rally">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Dirt Rally</h5>
+                <p class="card-text text-center text-uppercase">Precio: 749 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__second-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
+            <div class="card">
+              <span class="badge bg-danger position-absolute">Oferta</span>
+              <img src="../assets/images/card-escape-from-tarkov.jpg" class="card-img-top img"
+                alt="Escape from tarkov">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Escape from tarkov</h5>
+                <p class="card-text text-center text-uppercase">Precio: 559 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__third-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
+            <div class="card">
+              <img src="../assets/images/card-euro-truck-simulator.jpg" class="card-img-top img"
+                alt="Euro Truck Simulator">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Euro Truck Simulator</h5>
+                <p class="card-text text-center text-uppercase">Precio: 689 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__quarter-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-2">
+            <div class="card">
+              <img src="../assets/images/card-medium.jpg" class="card-img-top img" alt="Medium">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Medium</h5>
+                <p class="card-text text-center text-uppercase">Precio: 629 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tercera fila de cards -->
+      <div class="games__third-container container my-lg-4 my-sm-4 my-md-0">
+        <div class="games__third-row row d-flex justify-content-center align-items-center">
+          <div class="games__first-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
+            <div class="card">
+              <img src="../assets/images/card-little-nightmares-2.jpg" class="card-img-top img"
+                alt="Little Nightmares 2">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Little Nightmares 2</h5>
+                <p class="card-text text-center text-uppercase">Precio: 669 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__second-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4">
+            <div class="card">
+              <span class="badge bg-danger position-absolute">Oferta</span>
+              <img src="../assets/images/card-tabs.jpg" class="card-img-top img" alt="Total Accurate Battle Simulator">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Tabs</h5>
+                <p class="card-text text-center text-uppercase">Precio: 559 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__third-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4">
+            <div class="card">
+              <img src="../assets/images/card-outriders.jpg" class="card-img-top img" alt="Outriders">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Outriders</h5>
+                <p class="card-text text-center text-uppercase">Precio: 589 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__quarter-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4">
+            <div class="card">
+              <img src="../assets/images/card-biomutant.jpg" class="card-img-top img" alt="Biomutant">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Biomutant</h5>
+                <p class="card-text text-center text-uppercase">Precio: 719 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cuarta fila de cards -->
+      <div class="games__quarter-container container my-lg-4 my-sm-4 my-md-0">
+        <div class="games__quarter-row row d-flex justify-content-center align-items-center">
+          <div class="games__first-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
+            <div class="card">
+              <img src="../assets/images/card-plants-vs-zombies.jpg" class="card-img-top img" alt="Plantas vs Zombies">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Plantas vs Zombie</h5>
+                <p class="card-text text-center text-uppercase">Precio: 749 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__second-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4">
+            <div class="card">
+              <img src="../assets/images/card-halo-infinite.jpg" class="card-img-top img" alt="Halo Infinite">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Halo Infinite</h5>
+                <p class="card-text text-center text-uppercase">Precio: 1139 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__third-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4">
+            <div class="card">
+              <img src="../assets/images/card-oddworld-soulstorm.jpg" class="card-img-top img" alt="Oddworld Soulstorm">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Oddworld Soulstorm</h5>
+                <p class="card-text text-center text-uppercase">Precio: 939 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="games__quarter-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4">
+            <div class="card">
+              <img src="../assets/images/card-humankind.jpg" class="card-img-top img" alt="Humankind">
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase">Humankind</h5>
+                <p class="card-text text-center text-uppercase">Precio: 689 ars</p>
+                <a href="checkout.html" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-dark py-5 color-text">
+    <div class="footer-container container">
+      <div class="footer-container__row row justify-content-center border-bottom">
+        <div class="footer__col-g77a col-lg-3 col-md-3 col-xl-5">
+          <h3 class="text-center text-uppercase fw-bold mb-3">g77a</h3>
+          <p class="text-center">Consigue las mejores ofertas de juegos antes</p>
+          <form class="row g-3 justify-content-center">
+            <div class="col-auto">
+              <input type="email" class="form-control" placeholder="Correo electronico" required>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn mb-3" data-bs-toggle="modal"
+                data-bs-target="#modal-suscription">Suscribirse
+              </button>
+            </div>
+          </form>
+          <!-- Modal Suscripcion -->
+          <div class="modal fade" id="modal-suscription" tabindex="-1" aria-labelledby="modal-suscription-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-suscription-label">¡Gracias por suscribirte!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Recibiras las mejores ofertas semanalmente.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Columna COMPRAR -->
+        <div class="footer__col-buy col-lg-2 col-md-2 col-xl-2">
+          <h3 class="h6 text-uppercase mb-4">Comprar</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="text-decoration-none" href="how-to-buy.html">Cómo comprar</a>
             </li>
-            <li>
-              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="games.html">Lista de juegos</a>
             </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="cards.html">Lista de tarjetas</a>
             </li>
-            <li>
-              <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="../index.html">Tienda</a>
             </li>
           </ul>
         </div>
-        <div class="footer-container-terms">
-          <ul>
-            <li><a href="#">TERMINOS Y CONDICIONES</a></li>
-            <li><a href="#">PAGO SEGURO</a></li>
-            <li><a href="#">POLITICAS DE PRIVACIDAD</a></li>
-            <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+        <!-- Columna AYUDA -->
+        <div class="footer__col-help col-lg-2 col-md-2 col-xl-2">
+          <h3 class="h6 text-uppercase mb-4">Ayuda</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="text-decoration-none" href="faqs.html">FAQ</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="how-to-buy.html">Cómo activar el juego</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="contact.html">Crear un ticket</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="contact.html">Centro de seguridad</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Columna CONTACTANOS -->
+        <div class="footer__col-contact col-lg-3 col-md-3 col-xl-3">
+          <h3 class="h6 text-uppercase mb-4">Contactanos</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-house-door fs-5 pe-3"></i>La Plata, Argentina</li>
+            <li class="mb-2"><i class="bi bi-envelope fs-5 pe-3"></i>g77a@info.com</li>
+            <li class="mb-2"><i class="bi bi-telephone fs-5 pe-3"></i>+ 54 221 4987653</li>
           </ul>
         </div>
       </div>
-    </footer>
-  </body>
+      <!-- Fila DERECHOS RESERVADOS e ICONOS DE REDES SOCIALES -->
+      <div class="row mt-3">
+        <div class="col-md-7 col-lg-8">
+          <p>Copyright 2021 &copy; G77A. Todos los derechos reservados</p>
+        </div>
+        <div class="col-md-5 col-lg-4 text-md-end">
+          <ul class="list-unstyled">
+            <li class="list-inline-item"><a href="https://www.facebook.com/martin.florencia.750" class="text-white"
+                target="_blank"><i class="bi bi-facebook fs-5 pe-2"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://twitter.com/tinchoz8426" class="text-white" target="_blank">
+                <i class="bi bi-twitter fs-5 pe-2"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/tz_estudios/" class="text-white"
+                target="_blank"> <i class="bi bi-instagram fs-5 pe-2"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCPsniHlxnUU750ONef0QDcQ"
+                class="text-white" target="_blank"><i class="bi bi-youtube fs-5 pe-2"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

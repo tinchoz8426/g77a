@@ -1,0 +1,40 @@
+@import "fonts";
+@import "variables";
+@import "navbar";
+@import "buttons";
+@import "cards";
+@import "modal";
+@import "about-us";
+@import "checkout";
+
+body{
+    background-color: $color-slate-gray;
+    font-family: $primary-font;
+    //font-style: $primary-font-italic;
+    //font-weight: $primary-font-bold;
+}
+
+//Colores de los textos y enlaces
+.color-text{
+    color: $color-cultured;
+}
+a{
+    color: $color-cultured;
+    &:hover{
+        color: $color-davys-grey;
+    }
+}
+
+//Background de Seccion MAS VENDIDOS/EN OFERTA y FAQ
+.container-hero{
+    background-color: $color-davys-grey;
+}
+.container-hero__carousel-item{
+    box-shadow: $box-shadow;
+}
+
+//Acordion Pagina ¿COMO COMPRAR?
+.accordion-item,
+.accordion-button{
+    background-color: $color-slate-gray;
+}

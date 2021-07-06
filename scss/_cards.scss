@@ -1,0 +1,32 @@
+@mixin cards ($bg-color, $border-color, $color, $shadow, $transition){
+    background-color: $bg-color;
+    border-color: $border-color;
+    color: $color;
+    box-shadow: $shadow;
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+}
+
+.card{
+    @include cards($color-light-gray, $color-light-gray, $color-charleston-green, $box-shadow, ease-in-out 0.2s);
+    .title{
+        color: $color-charleston-green;
+    }
+    .badge{
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    &:hover{
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+    }
+}
+.faq__card{
+    @include cards($color-davys-grey, $color-light-gray, $color-charleston-green, none, ease-in-out 0.2s);
+}
