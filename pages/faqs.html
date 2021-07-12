@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todas las dudas más frecuentes las podes encontrar en esta sección | G77A</title>
+    <title>Todas las dudas más frecuentes las podes encontrar en esta sección</title>
     <meta name="description"
         content="Si necesitas una ayuda rápida, podes revisar nuestra sección de PREGUNTAS FRECUENTES">
     <meta name="keywords" content="ayuda, preguntas, respuestas, soluciones, preguntas frecuentes">
@@ -22,63 +22,91 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img class="navbar__image" src="../assets/images/logo.png" alt="Logo" width="100" height="32">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar__list navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="games.html">Juegos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="cards.html">Tarjetas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="about-us.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="contact.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="how-to-buy.html">¿Cómo comprar?</a>
-                    </li>
-                </ul>
-                <div class="navbar__sign-in d-flex align-items-center">
-                    <!-- Carrito de compras trigger modal -->
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
-                            class="bi bi-cart3 text-secondary fs-2 pe-3"></i></a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="modal-cart-label"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal-cart-label">Tu carrito de compras</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Tu carrito de compras esta vacio
-                                </div>
-                            </div>
-                        </div>
+          <a class="navbar-brand" href="../index.html">
+            <img class="navbar__image" src="../assets/images/logo.png" alt="Logo" width="100" height="32">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar__list navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="games.html">Juegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="cards.html">Tarjetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="about-us.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="contact.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="how-to-buy.html">¿Cómo comprar?</a>
+              </li>
+            </ul>
+            <div class="navbar__sign-in d-flex align-items-center">
+              <!-- Carrito de compras trigger modal -->
+              <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
+                  class="bi bi-cart3 text-secondary fs-2 pe-3"></i></a>
+              <!-- Modal carrito de compras -->
+              <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="modal-cart-label" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal-cart-label">Tu carrito de compras</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form class="d-flex">
-                        <button class="btn me-2" type="submit">Registrarse</button>
-                        <button class="btn" type="submit">Iniciar sesión</button>
-                    </form>
+                    <div class="modal-body">
+                      Tu carrito de compras esta vacio
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <form class="d-flex">
+                <button data-bs-toggle="modal" data-bs-target="#modal-sign-in" class="btn me-2"
+                  type="button">Registrarse</button>
+                <!-- Modal boton Registrarse -->
+                <div class="modal fade" id="modal-sign-in" tabindex="-1" aria-labelledby="modal-cart-label"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modal-cart-label">¡Gracias por registrarte!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ¡Bienvenido a la comunidad de G77A!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button data-bs-toggle="modal" data-bs-target="#modal-log-in" class="btn" type="button">Iniciar sesión</button>
+                <!-- Modal boton Iniciar sesion -->
+                <div class="modal fade" id="modal-log-in" tabindex="-1" aria-labelledby="modal-cart-label"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modal-cart-label">¡Bienvenido de nuevo!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ¡Esperamos que puedas encontrar tu juego!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
     <!-- Main -->
     <main>
         <!-- Seccion ayuda -->

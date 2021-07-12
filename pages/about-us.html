@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¡Este es nuestro equipo y acá es donde trabajamos! | G77A</title>
+  <title>¡Este es nuestro equipo y acá es donde trabajamos!</title>
   <meta name="description" content="Nuestro equipo trabaja todos los días para ofrecerte el mejor servicio y experiencia en tu compra, en nuestras oficinas con la mejor infraestructura y tecnología.">
   <meta name="keywords" content="nuestro equipo, donde estamos, ubicación, trabajo">
   <!-- Bootstrap CSS -->
@@ -53,7 +53,7 @@
           <!-- Carrito de compras trigger modal -->
           <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
               class="bi bi-cart3 text-secondary fs-2 pe-3"></i></a>
-          <!-- Modal -->
+          <!-- Modal carrito de compras -->
           <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="modal-cart-label" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -68,8 +68,39 @@
             </div>
           </div>
           <form class="d-flex">
-            <button class="btn me-2" type="submit">Registrarse</button>
-            <button class="btn" type="submit">Iniciar sesión</button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-sign-in" class="btn me-2"
+              type="button">Registrarse</button>
+            <!-- Modal boton Registrarse -->
+            <div class="modal fade" id="modal-sign-in" tabindex="-1" aria-labelledby="modal-cart-label"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-cart-label">¡Gracias por registrarte!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ¡Bienvenido a la comunidad de G77A!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button data-bs-toggle="modal" data-bs-target="#modal-log-in" class="btn" type="button">Iniciar sesión</button>
+            <!-- Modal boton Iniciar sesion -->
+            <div class="modal fade" id="modal-log-in" tabindex="-1" aria-labelledby="modal-cart-label"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-cart-label">¡Bienvenido de nuevo!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ¡Esperamos que puedas encontrar tu juego!
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>

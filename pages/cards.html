@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¡Compra tarjetas digitales al mejor precio! | G77A</title>
+  <title>¡Compra tarjetas digitales al mejor precio!</title>
   <meta name="description"
     content="¡Visita G77A y compra códigos de tarjetas digitales al mejor precio ¡Disfruta la gran variedad y beneficios!">
   <meta name="keywords" content="tarjetas, digitales, códigos, steam, Xbox, Playstation, spotify">
@@ -54,7 +54,7 @@
           <!-- Carrito de compras trigger modal -->
           <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
               class="bi bi-cart3 text-secondary fs-2 pe-3"></i></a>
-          <!-- Modal -->
+          <!-- Modal carrito de compras -->
           <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="modal-cart-label" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -69,8 +69,39 @@
             </div>
           </div>
           <form class="d-flex">
-            <button class="btn me-2" type="submit">Registrarse</button>
-            <button class="btn" type="submit">Iniciar sesión</button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-sign-in" class="btn me-2"
+              type="button">Registrarse</button>
+            <!-- Modal boton Registrarse -->
+            <div class="modal fade" id="modal-sign-in" tabindex="-1" aria-labelledby="modal-cart-label"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-cart-label">¡Gracias por registrarte!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ¡Bienvenido a la comunidad de G77A!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button data-bs-toggle="modal" data-bs-target="#modal-log-in" class="btn" type="button">Iniciar sesión</button>
+            <!-- Modal boton Iniciar sesion -->
+            <div class="modal fade" id="modal-log-in" tabindex="-1" aria-labelledby="modal-cart-label"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-cart-label">¡Bienvenido de nuevo!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ¡Esperamos que puedas encontrar tu juego!
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -88,7 +119,7 @@
       <!-- Primera fila, TARJETAS PSN -->
       <div class="gift-card__first-container container my-lg-4 mb-sm-4 mb-md-0">
         <div class="gift-card__first-row row d-flex justify-content-center align-items-center">
-          <h2 class="gift-card__tittle text-center text-white text-uppercase">Compra tarjeta digitales, al mejor precio
+          <h2 class="gift-card__tittle fs-3 text-center text-white text-uppercase">Compra tarjeta digitales, al mejor precio
           </h2>
           <div class="gift-card__first-col col-8 mb-4 col-lg-3 col-md-6 col-sm-12 my-lg-0 mb-md-4 mb-sm-4">
             <div class="card">

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Podes contactarte con nosotros si tenes algún problema o sugerencia. | G77A</title>
+  <title>Podes contactarte con nosotros si tenes algún problema o sugerencia.</title>
   <meta name="description" content="Si quieres ponerte en contacto con G77A sobre cualquier tema, podes llenar el formulario.">
   <meta name="keywords" content="problemas, ticket, contacto, solución, resolver">
   <!-- Bootstrap CSS -->
@@ -53,7 +53,7 @@
           <!-- Carrito de compras trigger modal -->
           <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
               class="bi bi-cart3 text-secondary fs-2 pe-3"></i></a>
-          <!-- Modal -->
+          <!-- Modal carrito de compras -->
           <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="modal-cart-label" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -68,8 +68,39 @@
             </div>
           </div>
           <form class="d-flex">
-            <button class="btn me-2" type="submit">Registrarse</button>
-            <button class="btn" type="submit">Iniciar sesión</button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-sign-in" class="btn me-2"
+              type="button">Registrarse</button>
+            <!-- Modal boton Registrarse -->
+            <div class="modal fade" id="modal-sign-in" tabindex="-1" aria-labelledby="modal-cart-label"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-cart-label">¡Gracias por registrarte!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ¡Bienvenido a la comunidad de G77A!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button data-bs-toggle="modal" data-bs-target="#modal-log-in" class="btn" type="button">Iniciar sesión</button>
+            <!-- Modal boton Iniciar sesion -->
+            <div class="modal fade" id="modal-log-in" tabindex="-1" aria-labelledby="modal-cart-label"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-cart-label">¡Bienvenido de nuevo!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ¡Esperamos que puedas encontrar tu juego!
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -83,7 +114,22 @@
         <div class="col-10 col-lg-5 mb-5">
           <h2 class="text-uppercase">¿Problemas con la compra?</h2>
           <p>La mejor manera de resolverlo rápidamente es <span class="text-warning">crear un ticket</span>.</p>
-          <button type="button" class="btn border-0">Crear ticket ahora</button>
+          <button data-bs-toggle="modal" data-bs-target="#modal-ticket" type="button" class="btn border-0">Crear ticket ahora</button>
+          <!-- Modal boton Crear un ticket ahora -->
+          <div class="modal fade" id="modal-ticket" tabindex="-1" aria-labelledby="modal-cart-label"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-cart-label">¡Ya creaste tu ticket!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ¡En breve nos estaremos comunicando contigo! Recuerda conservar tu número de ticket.
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
         <!-- Formulario de contacto -->
         <div class="col-10 col-lg-4">
